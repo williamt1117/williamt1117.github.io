@@ -1,0 +1,168 @@
+/*------------------------------------------------
+Text and Such
+------------------------------------------------*/
+h1, h2, h3, p {
+    all: unset;
+} 
+
+h1 {
+    font-size: 30px;
+    padding-bottom: 2px;
+}
+
+
+body {
+    font-family: 'Nunito', sans-serif;
+    display: flex;
+    flex-direction: column;
+    padding: 0 0 0 15px;
+    background-color: #ffffff;
+}
+
+.container {
+    display: flex;
+    flex-grow: 1;
+    height: 90vh;
+}
+
+.tooltip {
+  position: absolute;
+  visibility: hidden;
+  background-color: white;
+  border: 1px solid #ccc;
+  padding: 10px;
+  border-radius: 4px;
+  box-shadow: 0 0 5px rgba(0,0,0,0.3);
+  pointer-events: none;
+}
+
+/*------------------------------------------------
+Circle Graph
+------------------------------------------------*/
+.circlesContainer {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 928px;
+    margin-right: 15px;
+}
+
+#circles {
+    width: 100%;
+    height: 928px;
+}
+
+/*------------------------------------------------
+Filter and Legend
+------------------------------------------------*/
+.filters {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 30px;
+    right: -58px;
+    z-index: 100;
+}
+
+.filter p {
+    display: block;
+    padding: 0 0 5px 0;
+}
+
+.filter {
+    margin-bottom: 15px;
+}
+
+.legend {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    bottom: -30px;
+    right: -210px;
+}
+
+.legend p {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.legendHeading {
+    font-style: italic;
+    font-size: 18px;
+    padding-bottom: 10px;
+}
+
+.dot {
+    height: 16px;
+    width: 16px;
+    border: 1px solid black;
+    background-color: #ffff;
+    clear: both;
+    border-radius: 50%;
+    margin-right: 8px;
+    float: left;
+}
+
+.box {
+    float: left;
+    height: 15px;
+    width: 16px;
+    border: 1px solid black;
+    clear: both;
+    border-radius: 4px;
+    margin-right: 8px;
+}
+
+.red {
+  background-color: #e25097;
+}
+
+.yellow {
+  background-color: #FFB000;
+}
+
+.grey {
+    background-color: #d9d9d9;
+}
+
+/*------------------------------------------------
+Histogram
+------------------------------------------------*/
+.histogramContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    width: 500px;
+}
+
+.histHeading {
+    font-size: 20px;
+    position: absolute;
+    bottom: 358px;
+    right: -134px;
+}
+
+#histogram {
+    position: absolute;
+    width: 100%;
+    height: 350px;
+    bottom: 0px;
+    left: 245px;
+}
+
+.filterHisto {
+    position: absolute;
+    bottom: 0px;
+    right: -21px;
+}
+
+/*------------------------------------------------
+Pie Chart
+------------------------------------------------*/
+#pieChart {
+    height: 700px;
+    width: 700px;
+    position: absolute;
+    top: 20px;
+    right: -315px;}  

@@ -8,7 +8,7 @@
     --tint-color: rgba(255, 255, 255, 0.05);
     --tint-hovered-color: rgba(255, 255, 255, 0.1);
     --corner-radius: 15px;
-    --capped-width: min(1500px, 100%);
+    --capped-width: min(1350px, 100%);
 }
 
 @keyframes fadeIn {
@@ -43,6 +43,7 @@ main > h1 {
 html {
     font-family: 'Roboto Mono', monospace;
     color: var(--text-color);
+    font-size: 100%;
 }
 
 body {
@@ -334,6 +335,24 @@ img {
 .education-card .courselist > * {
     margin-bottom: 0em;
     margin-left: 3em;
+}
+
+body > h2 {
+    width: var(--capped-width);
+    margin-left: auto;
+    margin-right: auto;
+}
+
+header > h2 {
+    width: var(--capped-width);
+    margin-left: auto;
+    margin-right: auto;
+}
+
+header > .skills-grid {
+    width: var(--capped-width);
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .skills-grid {

@@ -7,7 +7,6 @@ document.addEventListener('DOMContentLoaded', function() {
                 <li><a href="index.html">About Me</a></li>
                 <li><a href="projects.html">Projects</a></li>
                 <li><a href="experience_education.html">Experience & Education</a></li>
-                <li><a href="skills.html">Skills</a></li>
             </ul>
         </nav>
         <hr class="nav-divider">

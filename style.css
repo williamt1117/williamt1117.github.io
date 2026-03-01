@@ -1,12 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
 
 :root {
-    --base-color: #0f081e;
-    --text-color: #e2e2e2;
-    --text-color-2: #cacacacc;
-    --secondary-color: #ffffff74;
-    --tint-color: rgba(255, 255, 255, 0.05);
-    --tint-hovered-color: rgba(255, 255, 255, 0.1);
+    --base-color: #0d1117;
+    --text-color: #c9d1d9;
+    --text-color-2: #8b949e;
+    --secondary-color: #58a6ff;
+    --tint-color: rgba(88, 166, 255, 0.08);
+    --tint-hovered-color: rgba(88, 166, 255, 0.15);
     --corner-radius: 15px;
     --capped-width: min(1350px, 100%);
 }
@@ -126,11 +126,7 @@ nav a.active {
     padding: 1em;
     border-radius: var(--corner-radius);
     border: 1px solid var(--secondary-color);
-}
-
-.two-column-container > *:first-child {
     background-color: var(--tint-color);
-    transition: all 0.3s ease;
 }
 
 .text-container {
@@ -380,7 +376,6 @@ header > .skills-grid {
     margin: 0;
     padding: 0.45em 0.8em;
     border-radius: 999px;
-    border: 1px solid var(--secondary-color);
     background: var(--tint-color);
     color: var(--text-color);
     font-size: 0.95em;

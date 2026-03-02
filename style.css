@@ -1,12 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
 
 :root {
-    --base-color: #0d1117;
+    --base-color: #161530;
     --text-color: #c9d1d9;
     --text-color-2: #8b949e;
-    --secondary-color: #58a6ff;
-    --tint-color: rgba(88, 166, 255, 0.08);
-    --tint-hovered-color: rgba(88, 166, 255, 0.15);
+    --secondary-color: #bc8ef4;
+    --tint-color: rgba(188, 142, 244, 0.08);
+    --tint-hovered-color: rgba(188, 142, 244, 0.15);
     --corner-radius: 15px;
     --capped-width: min(1350px, 100%);
 }
@@ -49,6 +49,31 @@ html {
 body {
     padding: 1em;
     background-color: var(--base-color);
+    position: relative;
+    overflow-x: hidden;
+}
+
+body::before,
+body::after {
+    content: '';
+    position: fixed;
+    top: 0;
+    width: 200px;
+    height: 100%;
+    pointer-events: none;
+    z-index: 1;
+}
+
+body::before {
+    left: 0;
+    background: linear-gradient(to right, var(--secondary-color), transparent);
+    opacity: 0.1;
+}
+
+body::after {
+    right: 0;
+    background: linear-gradient(to left, var(--secondary-color), transparent);
+    opacity: 0.1;
 }
 
 h1, h2, h3 {

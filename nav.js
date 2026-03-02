@@ -7,6 +7,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 <li><a href="index.html">About Me</a></li>
                 <li><a href="projects.html">Projects</a></li>
                 <li><a href="experience_education.html">Experience & Education</a></li>
+                <li><a href="William Trottier - Computer Science Resume.pdf" target="_blank" rel="noopener noreferrer">Resume</a></li>
             </ul>
         </nav>
         <hr class="nav-divider">
